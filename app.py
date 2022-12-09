@@ -40,10 +40,5 @@ def add_thing():
         return number, 201
     return {"error": "Request must be JSON"}, 415
 
-
-
 # Save the file as: app.py  #or: export FLASK_APP=app.py
 # Run: python -m flask run
-# With curl or browser: http://127.0.0.1:5000/random    
-# curl -i http://127.0.0.1:5000/addThing -X POST -H 'Content-Type: application/json' -d '{"seed":2022}'
-# curl -i http://127.0.0.1:5000/addThing -X POST -H 'Content-Type: application/json' -d '{"random":1}'
